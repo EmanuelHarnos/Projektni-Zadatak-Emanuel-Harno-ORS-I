@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+     	<title>Contact</title>
+		<link rel="stylesheet" href="style.css">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="Pizza">
+		<meta name="author" content="Emanuel Harnos">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	</head>
+	<body>
+	<header>
+		<div class="hero-image" style="height: 200px;"></div>
+		<nav>
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="news.html">News</a></li>
+			  <li><a href="gallery.html">Gallery</a></li>
+			  <li><a href="about-us.html">About</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Contact formular</h1>
+		<div id="contact">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11149.22397025312!2d16.13607176400147!3d45.684830945863524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47667d901aca27f9%3A0x8ffd946e7dcd31b5!2sHotel%20Phoenix%20Velika%20Gorica!5e0!3m2!1sen!2shr!4v1641461475414!5m2!1sen!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<form action="http://pizza.com/pwa/responzive-page/send-contact.php" id="contact_form" name="contact_form" method="POST">
+				<label for="fname">Ime *</label>
+				<input type="text" id="fname" name="firstname" placeholder="Vase ime..." required>
+
+				<label for="lname">Prezime *</label>
+				<input type="text" id="lname" name="lastname" placeholder="Vase prezime..." required>
+				
+				<label for="lname">E-mail *</label>
+				<input type="email" id="email" name="email" placeholder="Vas e-mail..." required>
+
+				<label for="country">Država</label>
+				<select id="country" name="country">
+				  <option value="">Odaberite...</option>
+				  <option value="BiH" selected>Bosna i Hercegovina</option>
+				  <option value="HR" selected>Hrvatska</option>
+				  <option value="HU">Mađarska</option>
+				  <option value="SL">Slovenija</option>
+				  <option value="SR">Srbija</option>
+				</select>
+
+				<label for="subject">Opis</label>
+				<textarea id="subject" name="subject" placeholder="Napisite nesto..." style="height:100px"></textarea>
+
+				<input type="submit" value="Predaj">
+			</form>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright &copy; Emanuel Harnoš. <a href="https://github.com/EmanuelHarnos?tab=repositories"><img src="img/Github.png" title="Github" alt="Github"></a></p>
+	</footer>
+</body>
+</html>
